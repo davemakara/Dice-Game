@@ -15,6 +15,7 @@ body {
   /* align-items: center; */
   padding: 20px 40px;
   justify-content: center;
+  position: relative;
 }
 
 .wrapper {
@@ -89,7 +90,7 @@ body {
 .btn {
   position: absolute;
 
-  left: 50%;
+  /* left: 50%; */
   transform: translateX(-50%);
   color: #444;
   background: none;
@@ -117,13 +118,29 @@ body {
   /* margin-right: 0.5rem; */
 }
 .newGame {
-  top: 80%;
+  top: 37rem;
+  left: 5.5rem;
 }
 .dice {
-  top: 86%;
+  top: 34rem;
+  right: -3rem;
 }
 .hold {
-  top: 92%;
+  top: 37rem;
+  right: -1.5rem;
+}
+
+.dicePic {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  top: 28rem;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.hidden {
+  display: none;
 }
 
 @media only screen and (min-width: 680px) {
@@ -150,7 +167,7 @@ body {
     margin-bottom: 6rem;
   }
   .currentScoreBox {
-    padding: 1.2rem 4rem;
+    padding: 0.5rem 2rem;
   }
   .current {
     margin-bottom: 1rem;
@@ -159,11 +176,65 @@ body {
   .currentScore {
     font-size: 2rem;
   }
+  .btn {
+    left: 50%;
+  }
+
+  .newGame {
+    /* top: 10rem; */
+    top: 14%;
+  }
+  .dice {
+    /* top: 46rem; */
+    top: 64%;
+    width: 9rem;
+  }
+  .hold {
+    /* top: 49.5rem; */
+    top: 73%;
+    width: 7rem;
+  }
+
+  .dicePic {
+    width: 90px;
+    height: 90px;
+    /* top: 15rem; */
+    top: 30%;
+  }
 }
 
 @media only screen and (min-width: 1000px) {
   .player {
     flex: 50%;
     padding: 6.5rem 9rem;
+  }
+  .btn {
+    font-size: 1.1rem;
+    padding: 0.6rem 1.3rem;
+  }
+  .btn::first-letter {
+    font-size: 1.5rem;
+    /* display: inline-block; */
+    /* margin-right: 0.5rem; */
+  }
+  /* .newGame {
+    top: 13rem;
+  } */
+  .dice {
+    /* top: 34rem; */
+    width: 11rem;
+  }
+  .hold {
+    /* top: 38.5rem; */
+    width: 9rem;
+  }
+
+  .dicePic {
+    width: 100px;
+    height: 100px;
+    /* top: 21.5rem; */
+  }
+  .currentScoreBox {
+    padding: 1.2rem 4rem;
   }
 }
